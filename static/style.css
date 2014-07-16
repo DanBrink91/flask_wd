@@ -1,0 +1,56 @@
+
+body 
+{
+    font-family: 'Arichvo Narrow', sans-serif;
+    /*
+    TODO reset css
+     */
+    line-height: 1;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+/* 
+Is there enough width?!
+*/
+@media (min-width: 48em)
+{
+    header
+    {
+        background-color: #83B694;
+        color: #000;
+        font-weight: bold;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 20%;
+    }
+    #header
+    {
+        margin: 80% 0;
+    }
+    #header a:visited, #header a:link 
+    {
+        color: #FFF;
+    }
+    #content
+    {
+        background-color: #FFF;
+        margin-left: 20%;
+        width: 80%;
+    }
+}
+/*
+Alright not enough width...
+ */
+@media not all and (min-width: 48em)
+{
+    header
+    {
+        background-color: #EBF2DE;
+        color: #000;
+        top: 0;
+        width: 100%;
+    }
+}
